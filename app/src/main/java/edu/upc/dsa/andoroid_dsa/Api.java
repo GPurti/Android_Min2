@@ -7,6 +7,7 @@ import java.util.List;
 import edu.upc.dsa.andoroid_dsa.models.ChatMessage;
 import edu.upc.dsa.andoroid_dsa.models.Credentials;
 import edu.upc.dsa.andoroid_dsa.models.Gadget;
+import edu.upc.dsa.andoroid_dsa.models.Question;
 import edu.upc.dsa.andoroid_dsa.models.UpdatableUserInformation;
 import edu.upc.dsa.andoroid_dsa.models.User;
 import edu.upc.dsa.andoroid_dsa.models.UserId;
@@ -51,5 +52,8 @@ public interface Api {
 
     @GET("shop/message/{num}")
     Call<List<ChatMessage>> getMessages(@Path("number") Integer number);
+
+    @POST("shop/user/question")
+    Call<Void> addQuestion(@Body Question question);
 
 }

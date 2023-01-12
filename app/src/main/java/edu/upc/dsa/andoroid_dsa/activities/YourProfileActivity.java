@@ -124,8 +124,8 @@ public class YourProfileActivity extends AppCompatActivity{
         Log.i("SAVING: ",userId);
         editor.apply();
     }
-    public void updateUser(View view){
-        Intent intent =new Intent(YourProfileActivity.this, UpdateUserActivity.class);
+    public void openQuestion(View view){
+        Intent intent =new Intent(YourProfileActivity.this, QuestionActivity.class);
         this.saveUserEditInfo(this.idUser);
         this.startActivity(intent);
     }

@@ -47,7 +47,7 @@ public class UsersRanking extends AppCompatActivity {
 
 
     public void ReturnToProfile(View view){
-        Intent intentRegister = new Intent(UsersRanking.this, YourProfileActivity.class);
+        Intent intentRegister = new Intent(UsersRanking.this, DashBoardActivity.class);
         UsersRanking.this.startActivity(intentRegister);
     }
 }
